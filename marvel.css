@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #818385;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+nav {
+display: flex;
+justify-content: space-around;
+background-color: #444;
+padding: 10px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+}
+
+main {
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.superhero-card {
+    width: 29%;
+    height: 550px;
+    display: inline-block;
+    background-color: #e6e7e8;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.superhero-card:hover{
+    background-color: #fff;
+}
+
+.superhero-card img {
+width: 100%;
+aspect-ratio: 1;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+
+.favorite-card {
+    width: 80vw;
+    background-color: #e6e7e8;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.favorite-card:hover{
+    background-color: #fff;
+}
+
+.favorite-card img{
+    width: 100px;
+    aspect-ratio: 1;
+}
+.favorite-card button {
+    margin-left: 75%;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#superheroPage {
+    width: 55%;
+    justify-self: center;
+    align-self: center;
+    background-color: #e6e7e8;
+    padding: 20px;
+}
+
+#superheroPage img{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+button{
+    background-color: #333;
+    color: #f4f4f4;
+}

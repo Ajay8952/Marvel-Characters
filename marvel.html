@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superhero App</title>
+  <link rel="stylesheet" href="marvel.css">
+</head>
+<body>
+
+  <header>
+    <h1 style="color:#be202e ;">MARVEL CHARACTERS</h1>
+    <nav>
+      <a href="#" onclick="showHomePage()">Home</a>
+      <a href="#" onclick="showMyFavoritesPage()">My Favorites</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- Home Page -->
+    <div id="homePage">
+      <input style="margin-left: 10px;" type="text" id="searchInput" placeholder="Search superheroes..." value="Iron Man">
+      <button onclick="searchSuperheroes()">Search</button>
+      <div id="superheroesList"></div>
+    </div>
+
+    <!-- Superhero Page -->
+    <div id="superheroPage">
+      <h1 id="superheroName"></h1>
+      <img id="superheroImage" alt="Superhero Image">
+      <p id="superheroBio"></p>
+      <p id="comics"></p>
+      <p id="events"></p>
+      <p id="stories"></p>
+      <p id="series"></p>
+      <!-- Additional information from the API -->
+      <button onclick="showHomePage()">Back to Home</button>
+    </div>
+
+    <!-- My Favorite Superheroes Page -->
+    <div id="myFavoritesPage" style="display: none;">
+      <h2>My Favorite Superheroes</h2>
+      <div id="favoritesList"></div>
+    </div>
+  </main>
+
+  <script src="marvel.js">  </script>
+
+</body>
+</html>
